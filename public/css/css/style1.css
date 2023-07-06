@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media all and (min-width: 992px) {
+	.navbar .dropdown-menu-end{ right:0; left: auto;  }
+	.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+	.navbar .nav-item:hover .nav-link{ color: #f40b0b;  }
+	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	.navbar .dropdown-menu.fade-up{ top:180%;  }
+	.navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+  .dropdown-large{min-width:500px;}
+  
+  
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color: black;
+   font-size: 18px;
+   text-transform: uppercase;
+}
+.form-control{
+    width: 150px;
+    height: 30px;
+    margin: 5px 0 0 0;
+    padding: 0;
+    
+}
+.btn{
+    
+    width: 10px;
+    height: 8px;
+}
+
+/* container-fluid */
+.jumbotron{
+    margin-top: 5px;
+}
+.jumbotron div{
+    display: flex;
+    justify-content: center;
+  }
+.container-item{
+    text-decoration: none;
+}
+.hover-effect1 {
+    min-height: 20px;
+    background: #F44336;
+    text-align: center;
+  }
+  .hover-effect1 ul {
+   padding-top: 1px;
+  }
+  .hover-effect1 ul li {
+   display: inline-block;
+  }
+  .hover-effect1 ul li a {
+   font-size: 30px;
+   text-align: center;
+   color: #fff;
+   margin: 0px 10px;
+   line-height: 50px;
+   display: inline-block;
+   width: 50px;
+   height: 50px;
+   background:#dc3545;
+   -webkit-transition: all .6s ease;
+   -moz-transition: all .6s ease;
+   -ms-transition: all .6s ease;
+   -o-transition: all .6s ease;
+   transition: all .6s ease;
+  }
+  .hover-effect1 ul li:hover a {
+    border-radius: 50%;
+    background: #dc3545;
+   -moz-transform: rotate(360deg);
+   -webkit-transform: rotate(360deg);
+   -o-transform: rotate(360deg);
+   -ms-transform: rotate(360deg);
+   transform: rotate(360deg);
+  }
+  /* .card{
+    position: fixed;
+    top:0;
+    left: 100%;
+    width: 500px;
+    background-color: #453E3B;
+    height: 100vh;
+    transition: 0.5s;
+} */
+/* .active .card{
+    left: calc(100% - 500px);
+} */
+.active .container{
+   transform: translateX(-200px);
+}
+/* .card h1{
+    color: #E8BC0E;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.card .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.card .checkOut div{
+    background-color: #E8BC0E;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.card .checkOut div:nth-child(2){
+    background-color: #1C1F25;
+    color: #fff;
+} */
+.listCard li{
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+}
+.listCard li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listCard li img{
+    width: 90%;
+}
+.listCard li button{
+    background-color: #fff5;
+    border: none;
+}
+.listCard .count{
+    margin: 0 10px;
+}
+
+
+.container-shop{
+    
+    /* margin: auto; */
+    transition: 0.5s;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    
+}
+header .shopping{
+    position: relative;
+    /* text-align: right; */
+}
+header .shopping img{
+    width: 40px;
+}
+header .shopping span{
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    /* left: 80%; */
+    padding: 3px 10px;
+}
+.list{
+    
+    /* display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 50px; */
+}
+.list .item{
+    text-align: center;
+    background-color: #DCE0E1;
+    padding: 20px;
+    box-shadow: 0 50px 50px #757676;
+    letter-spacing: 1px;
+}
+.list .item img{
+    width: 100%;
+}
+.list .item .title{
+    font-weight: 600;
+}
+.list .item .price{
+    margin: 10px;
+}
+/* .container button{
+    background-color: #1C1F25;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+} */
+
+.center{
+    cursor: pointer;
+}
+  
+  

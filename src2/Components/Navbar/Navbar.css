@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+.navbar{
+    display: flex;
+    justify-content:  space-around;
+    align-items: center;
+    height: 75px;
+    background-color: brown;
+    color: white;
+}
+.logo{
+    font-size: 30px;
+}
+.nav-link{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 75%;
+}
+.home,
+.about,
+.contact,
+.signup{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.signup{
+    border: 1px solid yellow;
+    border-radius: 5px;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+@media screen and (max-width : 780px) {
+    .Log{
+        display: flex;
+        position: absolute;
+        top: 15px;
+        left: 35px;
+    }
+   .nav-link{
+    display: none;
+    transition: all 1s ease-out;
+
+   } 
+   .nav-links-mobile{
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: brown;
+    left: 0;
+    top: 75px;
+    transition: all 1s ease-out;
+    width: 100%;
+   }
+   .home,
+   .about,
+   .contact,
+   .signup{
+    color: white;
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+    transition: all 0.5 ease;
+   }
+   .signup{
+    border: none;
+   }
+   .mobile-menu-icon{
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    background-color: brown;
+    border: none;
+    outline: none;
+    top: 15px;
+    right: 25px;
+
+   }
+}
